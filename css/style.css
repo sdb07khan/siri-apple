@@ -176,7 +176,8 @@ body {
 .section-on-the-go {
   border-radius: 40px; }
   .section-on-the-go .sectionGoContainer {
-    padding: 12%; }
+    padding: 12%;
+    overflow: hidden; }
     .section-on-the-go .sectionGoContainer .sectionGoTop {
       position: relative;
       height: 100vh; }
@@ -192,8 +193,9 @@ body {
           min-height: 70vh;
           padding: 4rem 0; }
       .section-on-the-go .sectionGoContainer .sectionGoTop .sectionGoImgBox {
-        text-align: center;
-        transform: translate3d(5rem, -20rem, 0); }
+        text-align: center; }
+        .section-on-the-go .sectionGoContainer .sectionGoTop .sectionGoImgBox .sectionGoImg {
+          transform: translate3d(5rem, -20rem, 0); }
     .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoParaBox {
       width: 100%;
       display: flex;
@@ -205,6 +207,24 @@ body {
         width: 40%;
         padding-right: 4rem;
         color: var(--grey-4); }
+    .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoImageContentBox {
+      display: flex;
+      height: 45rem;
+      overflow: hidden;
+      border-radius: 40px; }
+      .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoImageContentBox .sectionGoPinImage {
+        width: 50%; }
+      .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoImageContentBox .sectionGoContentConatiner {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; }
+        .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoImageContentBox .sectionGoContentConatiner .sectionGoContentBox {
+          padding-left: 10rem; }
+          .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoImageContentBox .sectionGoContentConatiner .sectionGoContentBox .contentDescriptionBox .contentDescriptionHeading {
+            font-family: var(--sf-pro-display_semibold);
+            font-size: 6rem;
+            font-weight: 600; }
 
 .navContainer {
   width: 100%;
