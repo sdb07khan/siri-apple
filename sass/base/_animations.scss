@@ -1,0 +1,12 @@
+@keyframes heroanimation {
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0);
+  }
+}
+
+@keyframes herogradient {
+  100% {
+    background-position: 33% 100%;
+  }
+}

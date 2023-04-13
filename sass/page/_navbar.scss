@@ -1,0 +1,25 @@
+.navContainer {
+  width: 100%;
+  height: var(--nav-height);
+  background-color: var(--white-1);
+
+  .navContainerBox {
+    .navList {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3%;
+
+      .navItem {
+        list-style: none;
+
+        .navLink {
+          text-decoration: none;
+          font-family: var(--sf-pro-text_regular);
+          font-size: 1.2rem;
+          color: var(--black-1);
+        }
+      }
+    }
+  }
+}

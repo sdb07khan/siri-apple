@@ -1,0 +1,16 @@
+.heroPara {
+  font-family: var(--sf-pro-display_semibold);
+  font-size: 6rem;
+  font-weight: 600;
+  padding: 2rem 20%;
+  text-align: center;
+  background: linear-gradient(
+    121deg,
+    #d400a5 24%,
+    #7040b9 35%,
+    #2b6ec7 41%,
+    #35ffee 90%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

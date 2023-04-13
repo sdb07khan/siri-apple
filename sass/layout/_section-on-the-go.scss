@@ -1,0 +1,62 @@
+.section-on-the-go {
+  border-radius: 40px;
+
+  .sectionGoContainer {
+    padding: 12%;
+
+    .sectionGoTop {
+      position: relative;
+      height: 100vh;
+
+      .sectionGoHeadingBox {
+        height: 60vh;
+
+        .sectionGoHeadingText {
+          font-family: var(--sf-pro-display_semibold);
+          font-size: 24rem;
+          line-height: 0.7;
+          background: linear-gradient(
+            45deg,
+            #224d88 32%,
+            #935893 60%,
+            #e896b8 80%
+          );
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          min-height: 70vh;
+          padding: 4rem 0;
+        }
+      }
+
+      .sectionGoImgBox {
+        text-align: center;
+        transform: translate3d(5rem, -20rem, 0);
+
+        .sectionGoImg {
+        }
+      }
+    }
+
+    .sectionGoMiddle {
+      .sectionGoParaBox {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+
+        .sectionGoPara {
+          font-family: var(--sf-pro-display_semibold);
+          font-size: 2.6rem;
+          font-weight: 600;
+          width: 40%;
+          padding-right: 4rem;
+          color: var(--grey-4);
+        }
+      }
+
+      .sectionGoImageContentBox {
+        .sectionGoPinImage {
+        }
+      }
+    }
+  }
+}

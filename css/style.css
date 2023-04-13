@@ -1,0 +1,224 @@
+:root {
+  --black-0: #060616;
+  --black-1: #1f1f22;
+  --white-0: #ffffff;
+  --white-1: #fbfbfd;
+  --grey-0: #f5f5f5;
+  --grey-1: #efefef;
+  --grey-2: #dbdbdb;
+  --grey-3: #a8a8a8;
+  --grey-4: #8e8e8e;
+  --grey-5: #737373;
+  --grey-6: #363636;
+  --grey-7: #262626;
+  --hero-gradient-1: #d400a5;
+  --hero-gradient-2: #7040b9;
+  --hero-gradient-3: #2b6ec7;
+  --hero-gradient-4: #35ffee;
+  --nav-height: 4.8rem;
+  --sf-pro-display_light: "sf-pro-display_light", "Helvetica Neue", Helvetica,
+    Arial, sans-serif;
+  --sf-pro-display_regular: "sf-pro-display_regular", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  --sf-pro-display_semibold: "sf-pro-display_semibold", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  --sf-pro-text_bold: "sf-pro-text_bold", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --sf-pro-text_regular: "sf-pro-text_bold", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --sf-pro-text_semibold: "sf-pro-text_bold", "Helvetica Neue", Helvetica, Arial,
+    sans-serif; }
+
+@font-face {
+  font-family: "sf-pro-display_light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url(fonts/sf-pro-display_light.woff2) format("woff2"); }
+
+@font-face {
+  font-family: "sf-pro-display_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url(fonts/sf-pro-display_regular.woff2) format("woff2"); }
+
+@font-face {
+  font-family: "sf-pro-display_semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url(fonts/sf-pro-display_semibold.woff2) format("woff2"); }
+
+@font-face {
+  font-family: "sf-pro-text_bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url(fonts/sf-pro-text_bold.woff2) format("woff2"); }
+
+@font-face {
+  font-family: "sf-pro-text_regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url(fonts/sf-pro-text_regular.woff2) format("woff2"); }
+
+@font-face {
+  font-family: "sf-pro-text_semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  src: url(fonts/sf-pro-text_semibold.woff2) format("woff2"); }
+
+@keyframes heroanimation {
+  100% {
+    opacity: 1;
+    transform: scale(1) translateZ(0); } }
+
+@keyframes herogradient {
+  100% {
+    background-position: 33% 100%; } }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media only screen and (max-width: 62.5em) {
+    html {
+      font-size: 50%; } }
+
+body {
+  background-color: var(--white-0);
+  width: 100%;
+  max-width: 180rem;
+  margin-inline: auto;
+  background-color: var(--white-1); }
+
+.heroPara {
+  font-family: var(--sf-pro-display_semibold);
+  font-size: 6rem;
+  font-weight: 600;
+  padding: 2rem 20%;
+  text-align: center;
+  background: linear-gradient(121deg, #d400a5 24%, #7040b9 35%, #2b6ec7 41%, #35ffee 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.sectionHero {
+  overflow-x: hidden; }
+  .sectionHero .heroContainer {
+    width: 100%; }
+    .sectionHero .heroContainer .heroContainerBox {
+      display: flex;
+      justify-content: center; }
+      .sectionHero .heroContainer .heroContainerBox .columnLeft {
+        min-width: 30vw;
+        position: relative;
+        z-index: 10; }
+        .sectionHero .heroContainer .heroContainerBox .columnLeft .image1 {
+          position: absolute;
+          right: 2rem;
+          top: 5%;
+          z-index: 20;
+          transform: scale(1.5) translate3d(-110%, -95%, 0);
+          opacity: 0;
+          animation: heroanimation 2s ease 0s 1 normal forwards; }
+        .sectionHero .heroContainer .heroContainerBox .columnLeft .image2 {
+          position: absolute;
+          right: 4rem;
+          bottom: -25%;
+          z-index: 15;
+          transform: scale(1.2) translate3d(-75%, -30%, 0);
+          opacity: 0;
+          animation: heroanimation 2s ease 0s 1 normal forwards; }
+      .sectionHero .heroContainer .heroContainerBox .columnMiddle {
+        min-width: 40vw;
+        text-align: center; }
+        .sectionHero .heroContainer .heroContainerBox .columnMiddle .image3 {
+          position: relative;
+          z-index: 50;
+          transform: scale(1.3) translate3d(0, -100%, 0);
+          display: inline-block;
+          opacity: 0;
+          animation: heroanimation 2s ease 0s 1 normal forwards; }
+        .sectionHero .heroContainer .heroContainerBox .columnMiddle .heroTextBox {
+          margin: 4rem 0;
+          position: relative;
+          z-index: 50; }
+          .sectionHero .heroContainer .heroContainerBox .columnMiddle .heroTextBox .heroText {
+            font-family: var(--sf-pro-text_bold);
+            font-size: 28rem;
+            background: linear-gradient(121deg, #d400a5 24%, #7040b9 35%, #2b6ec7 41%, #35ffee 60%);
+            background-size: 300% 100%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: herogradient 3s cubic-bezier(0.33, 1, 0.68, 1) 0s 1 normal forwards; }
+        .sectionHero .heroContainer .heroContainerBox .columnMiddle .image4 {
+          position: relative;
+          z-index: 50;
+          transform: scale(1.3) translateY(50%);
+          display: inline-block;
+          opacity: 0;
+          animation: heroanimation 2s ease 0s 1 normal forwards; }
+      .sectionHero .heroContainer .heroContainerBox .columnRight {
+        min-width: 30vw;
+        position: relative;
+        z-index: 10; }
+        .sectionHero .heroContainer .heroContainerBox .columnRight .image5 {
+          position: absolute;
+          top: 2%;
+          left: 4rem;
+          z-index: 15;
+          transform: scale(1.3) translate3d(88%, -107%, 0);
+          opacity: 0;
+          animation: heroanimation 2s ease 0s 1 normal forwards; }
+        .sectionHero .heroContainer .heroContainerBox .columnRight .image6 {
+          position: absolute;
+          bottom: 4rem;
+          left: 2rem;
+          z-index: 15;
+          transform: scale(1.3) translate3d(107%, -45%, 0);
+          opacity: 0;
+          animation: heroanimation 2s ease 0s 1 normal forwards; }
+    .sectionHero .heroContainer .heroParaBox {
+      position: relative;
+      z-index: 50;
+      margin-top: 15%; }
+
+.section-on-the-go {
+  border-radius: 40px; }
+  .section-on-the-go .sectionGoContainer {
+    padding: 12%; }
+    .section-on-the-go .sectionGoContainer .sectionGoTop {
+      position: relative;
+      height: 100vh; }
+      .section-on-the-go .sectionGoContainer .sectionGoTop .sectionGoHeadingBox {
+        height: 60vh; }
+        .section-on-the-go .sectionGoContainer .sectionGoTop .sectionGoHeadingBox .sectionGoHeadingText {
+          font-family: var(--sf-pro-display_semibold);
+          font-size: 24rem;
+          line-height: 0.7;
+          background: linear-gradient(45deg, #224d88 32%, #935893 60%, #e896b8 80%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          min-height: 70vh;
+          padding: 4rem 0; }
+      .section-on-the-go .sectionGoContainer .sectionGoTop .sectionGoImgBox {
+        text-align: center;
+        transform: translate3d(5rem, -20rem, 0); }
+    .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoParaBox {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end; }
+      .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoParaBox .sectionGoPara {
+        font-family: var(--sf-pro-display_semibold);
+        font-size: 2.6rem;
+        font-weight: 600;
+        width: 40%;
+        padding-right: 4rem;
+        color: var(--grey-4); }
+
+.navContainer {
+  width: 100%;
+  height: var(--nav-height);
+  background-color: var(--white-1); }
+  .navContainer .navContainerBox .navList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3%; }
+    .navContainer .navContainerBox .navList .navItem {
+      list-style: none; }
+      .navContainer .navContainerBox .navList .navItem .navLink {
+        text-decoration: none;
+        font-family: var(--sf-pro-text_regular);
+        font-size: 1.2rem;
+        color: var(--black-1); }
