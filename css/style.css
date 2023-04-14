@@ -171,60 +171,128 @@ body {
     .sectionHero .heroContainer .heroParaBox {
       position: relative;
       z-index: 50;
-      margin-top: 15%; }
+      margin-top: 15%;
+      margin-bottom: 14rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      opacity: 1;
+      overflow: hidden; }
 
 .section-on-the-go {
   border-radius: 40px; }
   .section-on-the-go .sectionGoContainer {
-    padding: 12%;
-    overflow: hidden; }
-    .section-on-the-go .sectionGoContainer .sectionGoTop {
-      position: relative;
-      height: 100vh; }
-      .section-on-the-go .sectionGoContainer .sectionGoTop .sectionGoHeadingBox {
-        height: 60vh; }
-        .section-on-the-go .sectionGoContainer .sectionGoTop .sectionGoHeadingBox .sectionGoHeadingText {
-          font-family: var(--sf-pro-display_semibold);
-          font-size: 24rem;
-          line-height: 0.7;
-          background: linear-gradient(45deg, #224d88 32%, #935893 60%, #e896b8 80%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          min-height: 70vh;
-          padding: 4rem 0; }
-      .section-on-the-go .sectionGoContainer .sectionGoTop .sectionGoImgBox {
-        text-align: center; }
-        .section-on-the-go .sectionGoContainer .sectionGoTop .sectionGoImgBox .sectionGoImg {
-          transform: translate3d(5rem, -20rem, 0); }
-    .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoParaBox {
-      width: 100%;
-      display: flex;
-      justify-content: flex-end; }
-      .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoParaBox .sectionGoPara {
-        font-family: var(--sf-pro-display_semibold);
-        font-size: 2.6rem;
-        font-weight: 600;
-        width: 40%;
-        padding-right: 4rem;
-        color: var(--grey-4); }
-    .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoImageContentBox {
-      display: flex;
-      height: 45rem;
-      overflow: hidden;
-      border-radius: 40px; }
-      .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoImageContentBox .sectionGoPinImage {
-        width: 50%; }
-      .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoImageContentBox .sectionGoContentConatiner {
-        width: 50%;
+    padding: 12% 10%;
+    overflow: hidden;
+    background-image: linear-gradient(180deg, #fbfbfd, #e795b7 20%, #935893 45%, #224d88); }
+    .section-on-the-go .sectionGoContainer .sectionGoTopMiddle {
+      overflow: hidden; }
+      .section-on-the-go .sectionGoContainer .sectionGoTopMiddle .sectionGoTop {
+        position: relative;
+        height: 65rem; }
+        .section-on-the-go .sectionGoContainer .sectionGoTopMiddle .sectionGoTop .sectionGoHeadingBox {
+          height: 38rem; }
+          .section-on-the-go .sectionGoContainer .sectionGoTopMiddle .sectionGoTop .sectionGoHeadingBox .sectionGoHeadingText {
+            font-family: var(--sf-pro-display_semibold);
+            font-size: 24rem;
+            line-height: 0.7;
+            background: linear-gradient(45deg, #224d88 32%, #935893 60%, #e896b8 80%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            min-height: 70vh;
+            padding: 4rem 0; }
+        .section-on-the-go .sectionGoContainer .sectionGoTopMiddle .sectionGoTop .sectionGoImgBox {
+          text-align: center; }
+          .section-on-the-go .sectionGoContainer .sectionGoTopMiddle .sectionGoTop .sectionGoImgBox .sectionGoImg {
+            transform: translate3d(3rem, -19rem, 0); }
+      .section-on-the-go .sectionGoContainer .sectionGoTopMiddle .sectionGoMiddle {
         display: flex;
         flex-direction: column;
-        justify-content: center; }
-        .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoImageContentBox .sectionGoContentConatiner .sectionGoContentBox {
-          padding-left: 10rem; }
-          .section-on-the-go .sectionGoContainer .sectionGoMiddle .sectionGoImageContentBox .sectionGoContentConatiner .sectionGoContentBox .contentDescriptionBox .contentDescriptionHeading {
+        gap: 8rem; }
+        .section-on-the-go .sectionGoContainer .sectionGoTopMiddle .sectionGoMiddle .sectionGoParaBox {
+          width: 100%;
+          display: flex;
+          justify-content: flex-end; }
+          .section-on-the-go .sectionGoContainer .sectionGoTopMiddle .sectionGoMiddle .sectionGoParaBox .sectionGoPara {
             font-family: var(--sf-pro-display_semibold);
-            font-size: 6rem;
-            font-weight: 600; }
+            font-size: 2.6rem;
+            font-weight: 600;
+            width: 40%;
+            padding-right: 4rem;
+            color: var(--white-1); }
+        .section-on-the-go .sectionGoContainer .sectionGoTopMiddle .sectionGoMiddle .sectionGoImageContentBox {
+          display: flex;
+          height: 50rem;
+          border-radius: 40px;
+          background-color: var(--white-1);
+          padding-top: 4rem;
+          padding-left: 2rem; }
+          .section-on-the-go .sectionGoContainer .sectionGoTopMiddle .sectionGoMiddle .sectionGoImageContentBox .sectionGoPinImage {
+            width: 50%; }
+          .section-on-the-go .sectionGoContainer .sectionGoTopMiddle .sectionGoMiddle .sectionGoImageContentBox .sectionGoContentConatiner {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; }
+            .section-on-the-go .sectionGoContainer .sectionGoTopMiddle .sectionGoMiddle .sectionGoImageContentBox .sectionGoContentConatiner .sectionGoContentBox {
+              padding-left: 8rem;
+              padding-right: 4rem; }
+              .section-on-the-go .sectionGoContainer .sectionGoTopMiddle .sectionGoMiddle .sectionGoImageContentBox .sectionGoContentConatiner .sectionGoContentBox .contentDescriptionBox .contentDescriptionHeading {
+                font-family: var(--sf-pro-display_semibold);
+                font-size: 5.4rem;
+                font-weight: 600; }
+    .section-on-the-go .sectionGoContainer .sectionGoLast {
+      margin-top: 3rem; }
+      .section-on-the-go .sectionGoContainer .sectionGoLast .tilesContainer {
+        display: flex;
+        gap: 3rem;
+        min-height: 70rem; }
+        .section-on-the-go .sectionGoContainer .sectionGoLast .tilesContainer .tileBox1 {
+          background: linear-gradient(-15deg, #0c0c21 25%, #1c4262);
+          width: 50%;
+          border-radius: 40px;
+          padding: 0 3%;
+          padding-top: 4rem;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start; }
+          .section-on-the-go .sectionGoContainer .sectionGoLast .tilesContainer .tileBox1 .contentDescriptionBox {
+            margin-top: 2rem;
+            margin-bottom: 12rem; }
+            .section-on-the-go .sectionGoContainer .sectionGoLast .tilesContainer .tileBox1 .contentDescriptionBox .contentDescriptionHeading {
+              font-family: var(--sf-pro-display_semibold);
+              font-size: 4.6rem;
+              font-weight: 600;
+              color: var(--white-1); }
+          .section-on-the-go .sectionGoContainer .sectionGoLast .tilesContainer .tileBox1 .tile1ImgBox {
+            display: flex;
+            align-self: center;
+            justify-self: center; }
+        .section-on-the-go .sectionGoContainer .sectionGoLast .tilesContainer .tileBox2 {
+          background-color: var(--white-1);
+          width: 50%;
+          border-radius: 40px;
+          padding: 0 3%;
+          padding-top: 4rem;
+          overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start; }
+          .section-on-the-go .sectionGoContainer .sectionGoLast .tilesContainer .tileBox2 .contentDescriptionBox {
+            margin-top: 2rem;
+            margin-bottom: 6rem; }
+            .section-on-the-go .sectionGoContainer .sectionGoLast .tilesContainer .tileBox2 .contentDescriptionBox .contentDescriptionHeading {
+              font-family: var(--sf-pro-display_semibold);
+              font-size: 4.6rem;
+              font-weight: 600;
+              color: var(--black-1); }
+          .section-on-the-go .sectionGoContainer .sectionGoLast .tilesContainer .tileBox2 .tile2ImgBox {
+            display: flex;
+            align-self: flex-end;
+            justify-self: center; }
 
 .navContainer {
   width: 100%;

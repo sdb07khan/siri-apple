@@ -117,6 +117,12 @@
       position: relative;
       z-index: 50;
       margin-top: 15%;
+      margin-bottom: 14rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      opacity: 1;
+      overflow: hidden;
     }
   }
 }
